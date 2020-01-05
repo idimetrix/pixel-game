@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Game</title>
+</head>
+
+<body>
+
+<div id="root" class="root">
+  <div>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <canvas id="canvas3"></canvas>
+    <canvas id="canvas4"></canvas>
+  </div>
+
+  <div id="palette"></div>
+
+  <form>
+    <input type="range" id="sizeRange" name="sizeRange" min="50" max="300" value="140" step="1" oninput="this.form.sizeNumber.value = this.form.sizeRange.value">
+    <input type="number" id="sizeNumber" name="sizeNumber" min="50" max="300" value="140" step="1" oninput="this.form.sizeRange.value = this.form.sizeNumber.value"/>
+
+    <input type="range" id="colorsRange" name="colorsRange" min="8" max="64" value="48" step="1" oninput="this.form.colorsNumber.value = this.form.colorsRange.value"/>
+    <input type="number" id="colorsNumber" name="colorsNumber" min="8" max="64" value="48" step="1" oninput="this.form.colorsRange.value = this.form.colorsNumber"/>
+
+    <input type="range" id="pointRange" name="pointRange" min="4" max="32" value="8" step="1" oninput="this.form.pointNumber.value = this.form.pointRange.value"/>
+    <input type="number" id="pointNumber" name="pointNumber" min="4" max="32" value="8" step="1" oninput="this.form.pointRange.value = this.form.pointNumber"/>
+  </form>
+
+  <div>
+    <input type="file" id="computerBtn"/>
+    <button id="loadBtn">Load</button>
+    <button id="exportBtn">Export to LocalStorage</button>
+    <button id="importBtn">Import from LocalStorage</button>
+  </div>
+
+  <div>
+    <canvas id="canvas5"></canvas>
+  </div>
+
+</div>
+
+</body>
+
+</html>

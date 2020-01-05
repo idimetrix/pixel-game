@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    position: absolute;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+canvas {
+    cursor: crosshair;
+}
+
+#palette {
+    float: none;
+    clear: both;
+    overflow: hidden;
+    width: 1024px;
+
+    .palette {
+        width: 30px;
+        height: 30px;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 10px 10px 0;
+        border: 1px solid #000;
+    }
+
+    .palette-1 {
+        color: #000;
+        font-style: 30px;
+    }
+}
