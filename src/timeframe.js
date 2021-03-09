@@ -8,9 +8,9 @@ const timeframe = (name, write = false, breakpoint = "", text = "") => {
 
   if (write && excludes.indexOf(name) === -1) {
     console.log(
-      `${name +
-        (breakpoint ? `[${breakpoint}]` : "")} time: ${new Date().getTime() -
-        times[name]} ${text}`
+      `${name + (breakpoint ? `[${breakpoint}]` : "")} time: ${
+        new Date().getTime() - times[name]
+      } ${text}`
     );
   }
 };

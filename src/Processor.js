@@ -72,12 +72,12 @@ class Processor {
       pixels,
       palette,
       width: this.width,
-      height: this.height
+      height: this.height,
     };
   }
 
   palette() {
-    const arr = this.quant.palette(true).map(p => rgb2hex(p[0], p[1], p[2]));
+    const arr = this.quant.palette(true).map((p) => rgb2hex(p[0], p[1], p[2]));
 
     const index = arr.indexOf("#ffffff");
     if (index !== -1) {
@@ -91,7 +91,7 @@ class Processor {
     this.image = this.image || new Image();
 
     this.quant = new RgbQuant({
-      colors: this.colors
+      colors: this.colors,
     });
 
     this.image.onload = () => {

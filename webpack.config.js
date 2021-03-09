@@ -42,9 +42,11 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, 'index.html')
         }),
-      new CopyWebpackPlugin([
-        { from: 'src/assets', to: 'assets' }
-      ])
+      new CopyWebpackPlugin({
+          patterns: [
+              { from: 'src/assets', to: 'assets' }
+          ]
+      })
     ],
 
     // development server configuration
@@ -58,5 +60,5 @@ module.exports = {
     },
 
     // generate source map
-    devtool: ( 'production' === process.env.NODE_ENV ? 'source-map' : 'cheap-module-eval-source-map' ),
+    devtool: ( 'production' === process.env.NODE_ENV ? 'source-map' : 'cheap-module-source-map' ),
 };

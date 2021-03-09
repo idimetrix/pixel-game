@@ -1,7 +1,7 @@
 const rgb2hex = (r, g, b) =>
   `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
 
-const hex2rgb = hex => {
+const hex2rgb = (hex) => {
   let color = hex;
 
   if (color.charAt(0) === "#") {
@@ -28,7 +28,7 @@ const hex2rgb = hex => {
 
 const rgb2grayscale = (r, g, b) => r * 0.3 + g * 0.59 + b * 0.11;
 
-const hex2grayscale = hex => {
+const hex2grayscale = (hex) => {
   const color = hex2rgb(hex);
 
   const grayscale = parseInt(rgb2grayscale(color.r, color.g, color.b), 10);

@@ -19,14 +19,18 @@ class Game {
     this.palette2 = [];
     this.unblock = [];
 
-    canvas.addEventListener("mousedown", e => this._mouseDown(e), false);
-    canvas.addEventListener("mouseup", e => this._mouseUp(e), false);
-    canvas.addEventListener("mousemove", e => this._mouseMove(e), false);
+    canvas.addEventListener("mousedown", (e) => this._mouseDown(e), false);
+    canvas.addEventListener("mouseup", (e) => this._mouseUp(e), false);
+    canvas.addEventListener("mousemove", (e) => this._mouseMove(e), false);
 
-    canvas.addEventListener("dblclick", e => this._dblClick(e), false);
+    canvas.addEventListener("dblclick", (e) => this._dblClick(e), false);
 
-    canvas.addEventListener("DOMMouseScroll", e => this._mouseWheel(e), false);
-    canvas.addEventListener("mousewheel", e => this._mouseWheel(e), false);
+    canvas.addEventListener(
+      "DOMMouseScroll",
+      (e) => this._mouseWheel(e),
+      false
+    );
+    canvas.addEventListener("mousewheel", (e) => this._mouseWheel(e), false);
   }
 
   indexByPosition(x, y) {
@@ -173,7 +177,7 @@ class Game {
     this.width = data.width;
     this.height = data.height;
     this.palette = data.palette;
-    this.palette2 = data.palette.map(c => hex2grayscale(c));
+    this.palette2 = data.palette.map((c) => hex2grayscale(c));
     this.unblock = data.unblock || [];
 
     this.update();
@@ -185,7 +189,7 @@ class Game {
       width: this.width,
       height: this.height,
       palette: this.palette,
-      unblock: this.unblock
+      unblock: this.unblock,
     };
   }
 
