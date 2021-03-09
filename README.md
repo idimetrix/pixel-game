@@ -14,4 +14,4 @@ We offer a wide variety of stunning pictures. You’ll always find images for ev
 
 Pixel Art is more than just a coloring book for adults. It’s an entertaining way to relax and release your inner artist for free.
 
-![Screenshot1](https://github.com/idimetrix/pixel-game/blob/main/screenshots/game1.png?raw=true)
+![Screenshot1](https://github.com/idimetrix/pixel-game/blob/master/screenshots/game1.png?raw=true)
