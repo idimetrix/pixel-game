@@ -13,3 +13,5 @@ How to paint by numbers? It’s easy! Just use two fingers to zoom a picture til
 We offer a wide variety of stunning pictures. You’ll always find images for every mood and every taste.
 
 Pixel Art is more than just a coloring book for adults. It’s an entertaining way to relax and release your inner artist for free.
+
+![Screenshot1](https://github.com/idimetrix/pixel-game/blob/main/screenshots/game1.png?raw=true)

@@ -1,6 +1,6 @@
 {
-  "name": "js-project",
-  "description": "Boilerplate for JS project",
+  "name": "pixel-game",
+  "description": "Pixel Game",
   "version": "1.0.0",
   "author": {
     "name": "Dmitry Selikhov",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idimetrix/js-project.git"
+    "url": "git+https://github.com/idimetrix/pixel-game.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/idimetrix/js-project/issues",
+    "url": "https://github.com/idimetrix/pixel-game/issues",
     "email": "selikhov.dmitrey@gmail.com"
   },
-  "homepage": "https://github.com/idimetrix/js-project#readme",
+  "homepage": "https://github.com/idimetrix/pixel-game#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
